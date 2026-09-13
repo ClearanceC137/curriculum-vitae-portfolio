@@ -1,7 +1,7 @@
 # Tshepiso Mahoko — AI Portfolio
 
 A deliberately non-linear, recruiter-friendly CV website.
-
+- Accessed via cloudfare on the domain **https://mahoko.clearancetshepiso.workers.dev/**
 ## What makes it different
 
 - Interactive constellation-style home screen instead of a traditional CV layout.
