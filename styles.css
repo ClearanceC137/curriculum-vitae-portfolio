@@ -1436,3 +1436,135 @@ footer{position:fixed;bottom:0;left:0;right:0;height:34px;display:flex;justify-c
   }
 
 }
+
+/* DESKTOP COMPATIBILITY SCREEN */
+
+ 
+
+.desktop-warning {
+
+    display: none;
+
+}
+
+ 
+
+@media (max-width: 767px) and (hover: none) and (pointer: coarse) {
+
+ 
+
+    body > *:not(#desktop-warning) {
+
+        display: none !important;
+
+    }
+
+ 
+
+    .desktop-warning {
+
+        position: fixed;
+
+        inset: 0;
+
+        z-index: 999999;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        padding: 30px;
+
+        background: #07111f;
+
+        color: #eaf4ff;
+
+        text-align: center;
+
+    }
+
+ 
+
+    .warning-content {
+
+        max-width: 420px;
+
+    }
+
+ 
+
+    .warning-logo {
+
+        color: #c7ff6b;
+
+        font-size: 28px;
+
+        font-weight: 900;
+
+        margin-bottom: 65px;
+
+    }
+
+ 
+
+    .warning-icon {
+
+        font-size: 55px;
+
+        color: #c7ff6b;
+
+        margin-bottom: 25px;
+
+    }
+
+ 
+
+    .warning-content h1 {
+
+        font-size: clamp(32px, 9vw, 45px);
+
+        line-height: 1.1;
+
+        margin: 18px 0;
+
+    }
+
+ 
+
+    .warning-content h1 em {
+
+        color: #c7ff6b;
+
+    }
+
+ 
+
+    .warning-content p {
+
+        color: #a8b7c9;
+
+        font-size: 15px;
+
+        line-height: 1.8;
+
+    }
+
+ 
+
+    .warning-footer {
+
+        display: block;
+
+        margin-top: 65px;
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+
+        color: #7890a9;
+
+    }
+
+}
