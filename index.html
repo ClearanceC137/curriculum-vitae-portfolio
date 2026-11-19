@@ -41,6 +41,302 @@
         href="https://mahoko.clearancetshepiso.workers.dev/">
 
   <link rel="stylesheet" href="styles.css">
+<style>
+      /* Predictive Critical Alarm Intelligence case study — scoped additions */
+      .hydraulic-case {
+        padding-bottom: 70px;
+      }
+      .hydraulic-case img {
+        max-width: 100%;
+        display: block;
+      }
+      .hydraulic-feature-image {
+        overflow: hidden;
+        background: #10283b;
+        aspect-ratio: 16/8;
+      }
+      .hydraulic-feature-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .hydraulic-feature .project-body {
+        padding-top: 24px;
+      }
+      .hydraulic-open {
+        display: inline-flex;
+        margin-top: 16px;
+        border: 1px solid #c7ff6b;
+        color: #c7ff6b;
+        background: transparent;
+        padding: 12px 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 700;
+      }
+      .hydraulic-open:hover {
+        background: #c7ff6b;
+        color: #07111f;
+      }
+      .hydraulic-hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        align-items: center;
+        padding: 28px;
+        border: 1px solid rgba(170, 204, 230, 0.2);
+        border-radius: 20px;
+        background: rgba(17, 35, 53, 0.8);
+        margin: 28px 0 46px;
+      }
+      .hydraulic-hero > img {
+        width: 100%;
+        border-radius: 12px;
+        background: #b3c6df;
+      }
+      .hydraulic-kicker {
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        color: #c7ff6b;
+      }
+      .hydraulic-hero h3 {
+        font-size: clamp(25px, 3vw, 42px);
+        line-height: 1.13;
+        margin: 14px 0;
+      }
+      .hydraulic-hero p,
+      .hydraulic-panel p,
+      .hydraulic-pipeline p,
+      .hydraulic-section-title p {
+        line-height: 1.65;
+        color: #b8c9d8;
+      }
+      .hydraulic-stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin: 24px 0;
+      }
+      .hydraulic-stats div {
+        border-top: 1px solid #486072;
+        padding-top: 12px;
+      }
+      .hydraulic-stats strong {
+        display: block;
+        font-size: clamp(20px, 2.5vw, 31px);
+        color: #c7ff6b;
+      }
+      .hydraulic-stats span {
+        font-size: 11px;
+        color: #a9bccd;
+      }
+      .hydraulic-note {
+        font-size: 12px;
+      }
+      .hydraulic-section-title {
+        margin: 44px 0 20px;
+      }
+      .hydraulic-section-title h3 {
+        font-size: clamp(24px, 3vw, 38px);
+        margin: 10px 0;
+      }
+      .hydraulic-pipeline {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 12px;
+      }
+      .hydraulic-pipeline > div,
+      .hydraulic-panel,
+      .hydraulic-conditions > div {
+        background: #12283c;
+        border: 1px solid #28465b;
+        border-radius: 14px;
+        padding: 20px;
+      }
+      .hydraulic-pipeline span {
+        color: #c7ff6b;
+        font-size: 13px;
+      }
+      .hydraulic-pipeline strong {
+        display: block;
+        margin: 10px 0;
+      }
+      .hydraulic-pipeline p {
+        font-size: 13px;
+      }
+      .hydraulic-two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin: 24px 0;
+      }
+      .hydraulic-panel h3 {
+        margin: 10px 0 14px;
+        font-size: 24px;
+      }
+      .hydraulic-panel li {
+        margin: 10px 0;
+        line-height: 1.55;
+        color: #c6d4df;
+      }
+      .hydraulic-gallery {
+        border: 1px solid #28465b;
+        background: #102235;
+        border-radius: 18px;
+        overflow: hidden;
+      }
+      .hydraulic-gallery-main > img {
+        width: 100%;
+        margin: 40px;
+        max-height: 590px;
+        object-fit: contain;
+        background: #05224b;
+      }
+      .hydraulic-gallery-caption {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        padding: 18px;
+      }
+      .hydraulic-gallery-caption strong,
+      .hydraulic-gallery-caption span {
+        display: block;
+      }
+      .hydraulic-gallery-caption span {
+        font-size: 13px;
+        color: #aebfce;
+        margin-top: 5px;
+      }
+      .hydraulic-gallery-buttons {
+        display: flex;
+        gap: 8px;
+      }
+      .hydraulic-gallery-buttons button {
+        background: #223d53;
+        color: white;
+        border: 1px solid #49677b;
+        padding: 8px 14px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .hydraulic-gallery-thumbs {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 8px;
+        padding: 12px;
+      }
+      .hydraulic-gallery-thumbs button {
+        border: 2px solid transparent;
+        background: #1d3448;
+        border-radius: 8px;
+        padding: 4px;
+        cursor: pointer;
+        color: #c6d4df;
+        text-align: left;
+        font-size: 11px;
+      }
+      .hydraulic-gallery-thumbs button[aria-pressed="true"] {
+        border-color: #c7ff6b;
+      }
+      .hydraulic-gallery-thumbs img {
+        width: 100%;
+        height: 75px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-bottom: 5px;
+      }
+      .hydraulic-conditions {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+      }
+      .hydraulic-conditions strong,
+      .hydraulic-conditions span {
+        display: block;
+      }
+      .hydraulic-conditions strong {
+        color: #c7ff6b;
+      }
+      .hydraulic-conditions span {
+        font-size: 12px;
+        color: #bdceda;
+        margin-top: 8px;
+      }
+      .hydraulic-figure {
+        margin: 0;
+        background: #12283c;
+        border: 1px solid #28465b;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .hydraulic-figure img {
+        width: 100%;
+        height: 230px;
+        object-fit: contain;
+        background: #a9c0dc;
+      }
+      .hydraulic-figure figcaption {
+        padding: 14px;
+        font-size: 13px;
+        color: #bdceda;
+      }
+      .hydraulic-links {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 28px 0;
+      }
+      .hydraulic-pending {
+        padding: 12px 16px;
+        border: 1px dashed #61778b;
+        border-radius: 8px;
+        color: #c6d4df;
+        font-size: 13px;
+      }
+      .hydraulic-feature .project-number {
+        font-size: 12px;
+      }
+      .hydraulic-case .eyebrow {
+        color: #c7ff6b;
+      }
+      @media (max-width: 900px) {
+        .hydraulic-hero,
+        .hydraulic-two-col {
+          grid-template-columns: 1fr;
+        }
+        .hydraulic-pipeline {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .hydraulic-conditions {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .hydraulic-stats {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 560px) {
+        .hydraulic-hero {
+          padding: 15px;
+        }
+        .hydraulic-pipeline,
+        .hydraulic-conditions {
+          grid-template-columns: 1fr;
+        }
+        .hydraulic-gallery-thumbs {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .hydraulic-gallery-caption {
+          flex-wrap: wrap;
+        }
+        .hydraulic-figure img {
+          height: auto;
+        }
+        .hydraulic-feature-image {
+          aspect-ratio: 16/10;
+        }
+      }
+    </style>
 </head>
 
 <body >
@@ -87,27 +383,30 @@
               <strong>AI Lab</strong>
           </button>
 
+          <button data-view="hydraulic">
+          <span>03</span><strong>Predictive AI</strong>
+        </button>
           <button data-view="bridge">
-              <span>03</span>
+              <span>04</span>
               <strong>Industry Bridge</strong>
           </button>
 
           <button data-view="experience">
-              <span>04</span>
+              <span>05</span>
               <strong>Experience</strong>
           </button>
 
           <button data-view="research">
-              <span>05</span>
+              <span>06</span>
               <strong>Research</strong>
           </button>
 
           <button data-view="reinforcementlearning">
-              <span>06</span>
+              <span>07</span>
               <strong>Reinforcement Learning</strong>
           </button>
           <button data-view="contact">
-              <span>07</span>
+              <span>08</span>
               <strong>Contact</strong>
           </button>
       </nav>
@@ -122,16 +421,17 @@
           <p class="eyebrow"><span class="pulse"></span> SOFTWARE AUTOMATION ENGINEER → AI</p>
           <h1>Engineering intelligence<br><em>from real-world data.</em></h1>
           <p class="hero-lede" id="heroLede">
-            I build systems where software, data and intelligent models meet — from industrial SCADA and SQL pipelines to computer vision, reinforcement learning and generative deep learning.
+            I design machine learning systems end-to-end — from GRU forecasting and condition classification to Python integration with industrial SCADA — alongside research in computer vision, reinforcement learning and generative AI.
           </p>
 
           <div class="hero-ctas">
             <button class="primary" data-view="ai">Explore the AI lab <span>↗</span></button>
             <button class="secondary" data-view="bridge">Why the transition makes sense <span>→</span></button>
+            <button class="secondary" data-view="hydraulic">Explore predictive AI case study ↗</button>
           </div>
 
           <div class="proof-strip">
-            <div><strong>02+</strong><span>years in<br>industrial software</span></div>
+            <div><strong>03+</strong><span>years in<br>industrial software</span></div>
             <div><strong>10+</strong><span>featured<br>AI / CS projects</span></div>
             <div><strong>02</strong><span>Degrees<br>BSC CS + AI Honours</span></div>
             <div><strong>∞</strong><span>curiosity<br>remaining</span></div>
@@ -152,8 +452,8 @@
           <button class="node node-vision" data-view="reinforcementlearning">
             <span>Agents</span><strong>RL</strong><small>Q-learning</small>
           </button>
-          <button class="node node-rl" data-view="contact">
-            <span>About</span><strong>Contacts</strong><small>E-mail · Phone</small>
+          <button class="node node-rl" data-view="hydraulic">
+            <span>SCADA</span><strong>Predictive Maintenance</strong><small>Forecasting · Critical Alarms Prediction</small>
           </button>
           <button class="node node-gen" data-view="research">
             <span>Research</span><strong>Models</strong><small>Results</small>
@@ -218,8 +518,46 @@
       </div>
 
       <div class="project-grid">
-        <article class="project featured" data-tags="vision,xai,deep-learning">
+        <article
+          class="project featured hydraulic-feature"
+          data-tags="machine-learning,industrial-ai,time-series,predictive-maintenance"
+        >
           <div class="project-number">01</div>
+          <div class="project-art wave-art">⌁⌁⌁</div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="pill">APPLIED MACHINE LEARNING</span
+              ><span>INTERNAL PROOF OF CONCEPT · 2026</span>
+            </div>
+            <h3>Predictive Critical Alarm Intelligence</h3>
+            <p>
+              Designed and developed the complete Python machine learning
+              backend: GRU-based forecasting, multi-output condition
+              classification, evaluation and inference. Integrated predictive
+              results into Adroit SCADA for operator-facing condition
+              monitoring and early-warning alarms.
+            </p>
+            <div class="chips">
+              <span>Python</span><span>TensorFlow / Keras</span
+              ><span>GRU</span><span>Time-series</span><span>SCADA</span
+              ><span>Multithreading</span>
+            </div>
+            <div class="result">
+              <strong>17</strong> sensors · <strong>5</strong> condition
+              targets · <strong>30s</strong> forecast horizon ·
+              <strong>~98%</strong> reported held-out classification accuracy
+            </div>
+            <button
+              class="hydraulic-open"
+              data-view="hydraulic"
+              type="button"
+            >
+              Explore the complete case study ↗
+            </button>
+          </div>
+        </article>
+        <article class="project featured" data-tags="vision,xai,deep-learning">
+          <div class="project-number">02</div>
           <div class="project-art vision-art"><span>∿</span><span>◉</span><span>∿</span></div>
           <div class="project-body">
             <div class="project-top"><span class="pill">COMPUTER VISION</span><span>HONOURS RESEARCH</span></div>
@@ -232,7 +570,7 @@
         </article>
 
         <article class="project" data-tags="reinforcement-learning,agents">
-          <div class="project-number">02</div>
+          <div class="project-number">03</div>
           <div class="project-art pac-art">◈ ◇ ◈</div>
           <div class="project-body">
             <div class="project-top"><span class="pill">REINFORCEMENT LEARNING</span><span>AGENTS</span></div>
@@ -244,7 +582,7 @@
         </article>
 
         <article class="project" data-tags="generative-ai,time-series">
-          <div class="project-number">03</div>
+          <div class="project-number">04</div>
           <div class="project-art wave-art">∿∿∿∿∿</div>
           <div class="project-body">
             <div class="project-top"><span class="pill">GENERATIVE DEEP LEARNING</span><span>TIME SERIES</span></div>
@@ -257,7 +595,7 @@
         </article>
 
         <article class="project" data-tags="supervised-learning,computer-vision">
-          <div class="project-number">04</div>
+          <div class="project-number">05</div>
           <div class="project-art ballet-art">✦ ✦ ✦</div>
           <div class="project-body">
             <div class="project-top"><span class="pill">SUPERVISED LEARNING</span><span>POSE + SEQUENCE</span></div>
@@ -269,7 +607,7 @@
         </article>
 
         <article class="project" data-tags="optimisation,metaheuristics">
-          <div class="project-number">05</div>
+          <div class="project-number">06</div>
           <div class="project-art opt-art"><i></i><i></i><i></i></div>
           <div class="project-body">
             <div class="project-top"><span class="pill">OPTIMISATION</span><span>EXPERIMENTAL STUDY</span></div>
@@ -282,7 +620,7 @@
         </article>
 
         <article class="project compact" data-tags="search,algorithms">
-          <div class="project-number">06</div>
+          <div class="project-number">07</div>
           <div class="project-body">
             <div class="project-top"><span class="pill">SEARCH</span><span>C++</span></div>
             <h3>8-Puzzle Solver</h3>
@@ -293,7 +631,7 @@
         </article>
 
         <article class="project compact" data-tags="game-ai,search">
-          <div class="project-number">07</div>
+          <div class="project-number">08</div>
           <div class="project-body">
             <div class="project-top"><span class="pill">GAME AI</span><span>C++</span></div>
             <h3>Congo: Minimax Game Agent</h3>
@@ -306,6 +644,272 @@
 
 
     </section>
+
+    <!-- PREDICTIVE AI CASE STUDY -->
+<section
+        class="view hydraulic-case"
+        data-title="Predictive AI"
+        id="hydraulic"
+      >
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">03 / FEATURED CASE STUDY · INDUSTRIAL AI</p>
+            <h2>
+              Predicting equipment condition<br /><em
+                >before conventional alarms.</em
+              >
+            </h2>
+          </div>
+          <p class="section-intro">
+            An end-to-end machine learning proof of concept combining
+            time-series forecasting, condition classification and
+            SCADA integration. Independently developed ML backend;
+            demonstrated using held-out hydraulic test cycles.
+          </p>
+        </div>
+        <div class="hydraulic-hero">
+          <div class="hydraulic-hero-copy">
+            <span class="hydraulic-kicker"
+              >PREDICTIVE CRITICAL ALARM INTELLIGENCE</span
+            >
+            <h3>From sensor data to actionable operator intelligence.</h3>
+            <p>
+              Traditional alarms react when a measured value crosses a
+              threshold. This prototype uses a 30-second observation window to
+              forecast the following 30 seconds, infer equipment condition and
+              publish diagnostic states and predictive alarms to an operator
+              interface.
+            </p>
+            <div class="hydraulic-stats">
+              <div><strong>17</strong><span>Sensor signals</span></div>
+              <div><strong>05</strong><span>Condition targets</span></div>
+              <div><strong>30s</strong><span>Forecast horizon</span></div>
+              <div>
+                <strong>~98%</strong><span>Reported average test accuracy</span>
+              </div>
+            </div>
+            <p class="hydraulic-note">
+              Research / demonstration result, not a verified production
+              accuracy or guaranteed alarm lead time.
+            </p>
+          </div>
+          <img
+            alt="Hydraulic system diagram with sensor readings"
+            loading="lazy"
+            src="assets/hydraulic/hydraulic-overview.png"
+          />
+        </div>
+        <div class="hydraulic-section-title">
+          <span class="eyebrow">01 / ENGINEERING PIPELINE</span>
+          <h3>Designed, trained and integrated end-to-end.</h3>
+        </div>
+        <div class="hydraulic-pipeline">
+          <div>
+            <span>01</span><strong>Ingest &amp; prepare</strong>
+            <p>
+              Hydraulic cycle data, sensor sampling rates, cleaning and feature
+              construction.
+            </p>
+          </div>
+          <div>
+            <span>02</span><strong>Forecast</strong>
+            <p>
+              GRU sequence models forecast the next 30 seconds from the previous
+              30 seconds.
+            </p>
+          </div>
+          <div>
+            <span>03</span><strong>Classify</strong>
+            <p>
+              Multi-output model evaluates cooler, valve, pump leakage,
+              accumulator and stability states.
+            </p>
+          </div>
+          <div>
+            <span>04</span><strong>Integrate</strong>
+            <p>
+              Python inference publishes values, confidence scores and
+              diagnostic outputs to Adroit SCADA.
+            </p>
+          </div>
+          <div>
+            <span>05</span><strong>Notify</strong>
+            <p>
+              Operator dashboard presents forecasts, severity, component
+              diagnostics and predictive alarms.
+            </p>
+          </div>
+        </div>
+        <div class="hydraulic-two-col">
+          <div class="hydraulic-panel">
+            <span class="eyebrow">MODEL OWNERSHIP</span>
+            <h3>Machine learning backend</h3>
+            <p>
+              I independently implemented the data-processing, forecasting,
+              classification, model-training, evaluation and inference workflows
+              in Python.
+            </p>
+            <ul>
+              <li>
+                17 hydraulic sensor channels spanning pressure, flow,
+                temperature, vibration, cooling efficiency and motor power
+              </li>
+              <li>
+                GRU-based time-series forecasting and five-target condition
+                classification
+              </li>
+              <li>
+                Held-out test-cycle selection for demonstration, with confidence
+                outputs
+              </li>
+              <li>
+                Concurrent Python publication of raw and forecast values,
+                predicted states and diagnostic messages
+              </li>
+            </ul>
+          </div>
+          <div class="hydraulic-panel">
+            <span class="eyebrow">SYSTEM INTEGRATION</span>
+            <h3>SCADA operator experience</h3>
+            <p>
+              Adroit SCADA's visual designer was used to assemble the interface.
+              I implemented the Python integration that supplies model outputs
+              to the SCADA system.
+            </p>
+            <ul>
+              <li>Hydraulic process mimic with sensor measurements</li>
+              <li>Actual-versus-forecast trends</li>
+              <li>
+                Five component/system condition panels with model confidence
+              </li>
+              <li>
+                Combined diagnostic summaries and predictive alarm history
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hydraulic-section-title">
+          <span class="eyebrow">02 / OPERATOR EXPERIENCE</span>
+          <h3>Explore the SCADA demonstration.</h3>
+          <p>
+            Captured screenshots from the internal proof-of-concept simulation.
+            Select a view to inspect the interface.
+          </p>
+        </div>
+        <div class="hydraulic-gallery">
+          <div class="hydraulic-gallery-main">
+          <img
+            alt="SCADA operator dashboard"
+            id="hydraulicGalleryImage"
+            src="assets/hydraulic/operator-dashboard.png"
+            style="
+              width: 100%;
+              height: 500px;
+              object-fit: contain;
+              object-position: center;
+              display: block;
+            "
+          />
+            <div class="hydraulic-gallery-caption">
+              <div>
+                <strong id="hydraulicGalleryTitle"
+                  >Full operator dashboard</strong
+                ><span id="hydraulicGalleryDesc"
+                  >Hydraulic overview, actual-versus-forecast trends,
+                  diagnostics and condition states.</span
+                >
+              </div>
+              <div class="hydraulic-gallery-buttons">
+                <button
+                  aria-label="Previous screenshot"
+                  id="hydraulicPrev"
+                  type="button"
+                >
+                  ←</button
+                ><button
+                  aria-label="Next screenshot"
+                  id="hydraulicNext"
+                  type="button"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hydraulic-gallery-thumbs" id="hydraulicThumbs"></div>
+        </div>
+        <div class="hydraulic-section-title">
+          <span class="eyebrow">03 / PREDICTIVE CONDITION INTELLIGENCE</span>
+          <h3>Five condition targets, one operator view.</h3>
+        </div>
+        <div class="hydraulic-conditions">
+          <div>
+            <strong>Cooler</strong><span>Efficiency / degradation</span>
+          </div>
+          <div><strong>Valve</strong><span>Valve health severity</span></div>
+          <div><strong>Pump</strong><span>Internal leakage</span></div>
+          <div><strong>Accumulator</strong><span>Pressure condition</span></div>
+          <div>
+            <strong>System</strong><span>Stability classification</span>
+          </div>
+        </div>
+        <div class="hydraulic-two-col">
+          <figure class="hydraulic-figure">
+            <img
+              style="background-color: #05224b;"
+              alt="Component condition severity and confidence"
+              src="assets/hydraulic/condition-panel.png"
+            />
+            <figcaption>
+              Condition states and confidence scores, displayed in the operator
+              interface.
+            </figcaption>
+          </figure>
+          <figure class="hydraulic-figure">
+            <img
+              style="background-color: #05224b;"
+              alt="Predictive critical alarm list"
+              src="assets/hydraulic/predictive-alarms.png"
+            />
+            <figcaption>
+              Early-warning alarm events for predicted severe equipment
+              conditions.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="hydraulic-section-title">
+          <span class="eyebrow">04 / RESULTS &amp; SCOPE</span>
+          <h3>Evidence, with clear boundaries.</h3>
+        </div>
+        <div class="hydraulic-panel">
+          <p>
+            The held-out evaluation reported approximately
+            <strong>98% average accuracy</strong> across five condition targets.
+            The prototype was demonstrated using unseen test cycles and
+            SCADA-based replay, rather than being validated as a live plant
+            deployment. Forecasting and diagnostic performance may vary with
+            real-world operating conditions and distribution shift.
+          </p>
+          <p>
+            <strong>What this demonstrates:</strong> end-to-end ML development,
+            model evaluation, inference orchestration, Python/SCADA systems
+            integration and translating predictions into an operator workflow.
+          </p>
+          <p>
+            <strong>Publication note:</strong> Screenshots, technical documents
+            and implementation details should be reviewed for employer and
+            third-party confidentiality before public release.
+          </p>
+        </div>
+        <div class="hydraulic-links">
+          <span class="hydraulic-pending">GitHub repository · Coming soon</span
+          ><span class="hydraulic-pending"
+            >Technical documentation · In preparation</span
+          ><span class="hydraulic-pending"
+            >Demonstration video · In preparation</span
+          >
+        </div>
+      </section>
 
     <!-- BRIDGE -->
     <section class="view" id="bridge" data-title="Industry Bridge">
@@ -423,6 +1027,7 @@
               <li>Work across software, operational data and industrial systems — connecting engineering requirements to usable technology.</li>
               <li>Analyse plant processes and translate operational requirements into technical solutions, system enhancements and intelligent automation workflows.</li>
               <li>Contribute to engineering initiatives involving data integration, monitoring and predictive analytics, connecting industrial systems with modern software and AI approaches.</li>
+              <li>Independently developed and demonstrated a hydraulic predictive intelligence proof of concept, integrating Python GRU forecasting and five-target condition classification with Adroit SCADA.</li>
             </ul>
             <div class="chips"><span>SCADA</span><span>SQL</span><span>Postgresql</span><span>Python</span><span>C#</span><span>JavaScript</span><span>Industrial Data</span><span>Big Data</span><span>.Net</span><span>MLflow</span><span>SCADA Intelligence</span><span>AutoAI</span><span>Docker</span></div>
           </div>
@@ -445,7 +1050,7 @@
         <div>
           <span class="eyebrow">Postgraduate</span>
           <h3>BSc Honours — Computer Science Specializing In Artificial Intelligence</h3>
-          <p><strong>University of Johannesburg</strong> · Feb 2024 — Nov 2025</p>
+          <p><strong>University of Johannesburg</strong> · Studies 2024–2025 · Graduated May 2026</p>
           <small>Reinforcement Learning · Big Data & Artificial Intelligence</small>
         </div>
 
@@ -498,7 +1103,7 @@
         <div>
           <span class="eyebrow">Postgraduate</span>
           <h3>BSc Honours — Computer Science Specializing In Artificial Intelligence</h3>
-          <p><strong>University of Johannesburg</strong> · Feb 2024 — Nov 2025</p>
+          <p><strong>University of Johannesburg</strong> · Studies 2024–2025 · Graduated May 2026</p>
           <small>Reinforcement Learning · Big Data & Artificial Intelligence</small>
         </div>
 
@@ -1206,7 +1811,6 @@
 
   </section>
 
-  </main>
     <!-- CONTACT -->
     <section class="view" id="contact" data-title="Contact">
       <div class="contact-wrap">
@@ -1245,7 +1849,7 @@
 
   <footer>
     <span>TSHEPISO MAHOKO / PORTFOLIO</span>
-    <span id="viewIndicator">01 / 06</span>
+    <span id="viewIndicator">01 / 08</span>
     <span>BUILT AS A WEBPAGE, NOT A PDF.</span>
   </footer>
 
@@ -1266,5 +1870,92 @@
   </div>
 
   <script src="script.js"></script>
+<script>
+      (() => {
+        const items = [
+          [
+            "operator-dashboard.png",
+            "Full operator dashboard",
+            "Hydraulic overview, actual-versus-forecast trends, diagnostics and condition states.",
+          ],
+          [
+            "hydraulic-overview.png",
+            "Hydraulic process overview",
+            "Process mimic with live readings for pressure, flow, temperature, vibration and power.",
+          ],
+          [
+            "condition-panel.png",
+            "Condition predictions",
+            "Valve, cooler, pump, accumulator and stability conditions with confidence scores.",
+          ],
+          [
+            "diagnostic-summary.png",
+            "AI diagnostic summary",
+            "Combined degradation interpretation and operator-facing diagnostic message.",
+          ],
+          [
+            "efficiency-vibration.png",
+            "Efficiency and vibration trends",
+            "Actual-versus-forecast efficiency, vibration and cooling power traces.",
+          ],
+          [
+            "motor-flow.png",
+            "Motor and flow trends",
+            "Motor power and volume-flow comparisons.",
+          ],
+          [
+            "pressure-trends.png",
+            "Pressure trends",
+            "Actual-versus-forecast pressure measurements PS1–PS6.",
+          ],
+          [
+            "temperature-trends.png",
+            "Temperature trends",
+            "Actual-versus-forecast temperature measurements TS1–TS4.",
+          ],
+          [
+            "predictive-alarms.png",
+            "Predictive alarm history",
+            "Operator alarm list displaying predicted critical conditions.",
+          ],
+        ];
+        const img = document.getElementById("hydraulicGalleryImage"),
+          thumbs = document.getElementById("hydraulicThumbs");
+        if (!img || !thumbs) return;
+        let index = 0;
+        function render(i) {
+          index = (i + items.length) % items.length;
+          const [file, title, desc] = items[index];
+          img.src = "assets/hydraulic/" + file;
+          img.alt = title;
+          document.getElementById("hydraulicGalleryTitle").textContent = title;
+          document.getElementById("hydraulicGalleryDesc").textContent = desc;
+          thumbs
+            .querySelectorAll("button")
+            .forEach((b, j) =>
+              b.setAttribute("aria-pressed", String(j === index)),
+            );
+        }
+        items.forEach(([file, title], i) => {
+          const b = document.createElement("button");
+          b.type = "button";
+          b.setAttribute("aria-label", "Show " + title);
+          const t = document.createElement("img");
+          t.src = "assets/hydraulic/" + file;
+          t.alt = "";
+          t.loading = "lazy";
+          b.append(t, document.createTextNode(title));
+          b.addEventListener("click", () => render(i));
+          thumbs.appendChild(b);
+        });
+        document
+          .getElementById("hydraulicPrev")
+          .addEventListener("click", () => render(index - 1));
+        document
+          .getElementById("hydraulicNext")
+          .addEventListener("click", () => render(index + 1));
+        render(0);
+      })();
+    </script>
 </body>
 </html>
